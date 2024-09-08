@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume Input Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Resume Input Form</h1>
+  </header>
+  <main>
+    <form id="resume-form">
+      <section>
+        <h2>Personal Information</h2>
+        <input type="text" id="name-input" placeholder="Your name" required><br>
+        <input type="text" id="address-input" placeholder="Your Address" required><br>
+        <input type="text" id="avatar-input" placeholder="Profile Picture URL" value="avatarr.jpg" readonly><br>
+        <input type="text" id="contact-input" placeholder="Contact Details" required><br>
+        <input type="url" id="linkedin-input" placeholder="LinkedIn URL"><br>
+        <input type="url" id="instagram-input" placeholder="Instagram URL"><br>
+        <input type="url" id="github-input" placeholder="GitHub URL"><br>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <input type="text" class="school-input" placeholder="School" required><br>
+        <input type="text" class="degree-input" placeholder="Degree"><br>
+        <input type="text" class="year-input" placeholder="Years Attended"><br>
+      </section>
+
+      <section id="skills-section">
+        <h2>Skills</h2>
+        <input type="text" id="skill-input" placeholder="Enter skill"><br>
+        <button type="button" id="add-skill">Add Skill</button>
+      </section>
+      <button type="button" id="toggle-skills">Toggle Skills Section</button>
+
+      <section>
+        <h2>Work Experience</h2>
+        <input type="text" class="job-title-input" placeholder="Job Title" required><br>
+        <input type="text" class="company-input" placeholder="Company" required><br>
+        <input type="text" class="job-years-input" placeholder="Years Worked"><br>
+        <textarea class="job-description-input" placeholder="Job Description"></textarea><br>
+      </section>
+
+      <section>
+        <h2>Courses</h2>
+        <input type="text" class="course-title-input" placeholder="Course Title"><br>
+        <textarea class="course-description-input" placeholder="Course Description"></textarea><br>
+      </section>
+      
+      
+      
+      <button type="submit">Submit Resume</button>
+    </form>
+  </main>
+  <script src="page1.js"></script>
+</body>
+</html>
